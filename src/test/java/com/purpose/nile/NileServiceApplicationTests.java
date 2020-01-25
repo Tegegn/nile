@@ -1,5 +1,6 @@
 package com.purpose.nile;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -10,6 +11,6 @@ class NileServiceApplicationTests {
 
     @Test
     void test(){
-        Assumptions.assumeTrue(true);
+        Assertions.assertFalse(false);
     }
 }
