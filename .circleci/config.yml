@@ -2,14 +2,18 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.4.1-node-browsers
+      - image: circleci/node:4.8.2-jessie
 
     steps:
       - checkout      
       - run:
-          name: build the jekyll site
-          command: bundle exec jekyll build
-
+          name: Update npm
+          command: 'sudo npm install -g npm@latest'
+       
+      - run:
+          name: Install npm wee
+          command: npm install
+          
       - run:
           name: Print the Current Time
           command: date
