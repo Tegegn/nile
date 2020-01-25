@@ -6,16 +6,15 @@ jobs:
       - image: circleci/ruby:2.4.1-node-browsers
     steps:
       -checkout
-      
       - run:
-          name: build dependencies
-          command: bundle install
+        name: build dependencies
+        command: bundle install
         
-      - run: 
-          name: build the jekyll site
-          command: bundle exec jekyll build
-          
       - run:
-          name: print current time
-          command: date
+        name: build the jekyll site
+        command: bundle exec jekyll build
+        
+      - run:
+        name: print current time
+        command: date
      
