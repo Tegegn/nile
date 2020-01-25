@@ -17,6 +17,6 @@ class NileServiceApplicationTests {
 
     @Test
     void test(){
-        Assertions.assertFalse(false);
+        Assertions.assertFalse(true);
     }
 }
