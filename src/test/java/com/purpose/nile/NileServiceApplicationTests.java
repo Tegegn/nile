@@ -9,10 +9,10 @@ import org.mockito.junit.jupiter.MockitoExtension;
 @ExtendWith(MockitoExtension.class)
 class NileServiceApplicationTests {
 
-    @Disabled
+
     @Test
-    void testShouldFail(){
-        Assertions.fail();
+    void testPass(){
+        Assertions.assertTrue(true);
     }
 
     @Test
